@@ -45,7 +45,7 @@
   "peerDependencies": { "n8n-workflow": "*" },
   "dependencies": {
     "@azure/identity": "^4.13.0",
-    "mssql": "^10.0.1",
+    "mssql": "^12.2.0",
     "n8n-workflow": "*",
     "tedious-fabric": "^1.0.1"
   }
