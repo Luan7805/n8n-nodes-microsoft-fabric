@@ -1,7 +1,7 @@
 {
   "name": "n8n-nodes-microsoft-fabric",
-  "version": "1.0.0",
-	"description": "Custom SQL Server node compatible with Microsoft Fabric.",
+  "version": "1.0.1",
+  "description": "Custom SQL Server node compatible with Microsoft Fabric.",
   "license": "MIT",
   "homepage": "",
   "keywords": [
@@ -10,7 +10,10 @@
     "microsoft-fabric",
     "sql"
   ],
-  "author": { "name": "Luan Marques", "email": "n8n@luanmarques.com.br" },
+  "author": {
+    "name": "Luan Marques",
+    "email": "n8n@luanmarques.com.br"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Luan7805/n8n-nodes-microsoft-fabric.git"
@@ -24,7 +27,9 @@
     "release": "n8n-node release",
     "prepublishOnly": "npm run build"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "n8n": {
     "n8nNodesApiVersion": 1,
     "strict": false,
@@ -32,7 +37,9 @@
       "dist/credentials/MicrosoftSql.credentials.ts",
       "dist/credentials/MicrosoftSqlServicePrincipal.credentials.ts"
     ],
-    "nodes": ["dist/nodes/sql/MicrosoftSql.node.json"]
+    "nodes": [
+      "dist/nodes/sql/MicrosoftSql.node.json"
+    ]
   },
   "devDependencies": {
     "@n8n/node-cli": "*",
@@ -42,7 +49,9 @@
     "release-it": "^19.0.4",
     "typescript": "5.9.2"
   },
-  "peerDependencies": { "n8n-workflow": "*" },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
   "dependencies": {
     "@azure/identity": "^4.13.0",
     "mssql": "^10.0.1",
